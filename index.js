@@ -6,13 +6,9 @@ function findMatching(drivers, string){
   return matching;
 };
 function fuzzyMatch(drivers, string){
-  let letters = string.split('');
-
-  function filterByFirstLetter(drivers, letter){
     let matchingDrivers = drivers.filter(name => {
       let firstLetter = name.split("")[0];
       return firstLetter.toUpperCase() === letter.toUpperCase()
     })
     return matchingDrivers;
-  };
 };
