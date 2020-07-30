@@ -7,8 +7,8 @@ function findMatching(drivers, string){
 };
 function fuzzyMatch(drivers, string){
     let matchingDrivers = drivers.filter(name => {
-      let firstLetter = name.split("")[0];
-      return firstLetter.toUpperCase() === letter.toUpperCase()
+      let firstLetters = name.split("")[0] + name.split("")[1];
+      return firstLetters.toUpperCase() === letter.toUpperCase()
     })
     return matchingDrivers;
 };
