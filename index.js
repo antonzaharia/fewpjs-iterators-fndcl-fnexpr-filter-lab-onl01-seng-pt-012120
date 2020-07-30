@@ -12,6 +12,6 @@ function fuzzyMatch(drivers, string){
     })
     return matchingDrivers;
 };
-function matchName() {
+function matchName(drivers, string) {
 
 }
